@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="StyleSheet.css">
+<img src="baby.jpg" alt="matthew" width="80" class="logo"><input  class="searchlink" type="text" placeholder="Search...">
+
+
+<div class="header">
+<h1>Matthew Dreusicke</h1>
+
+</div>
+</head>
+<body>
+<div >
+
+
+<button class="tablink" onclick="openPage('Home', this, 'transparent')">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'transparent')">About</button>
+<button class="tablink" onclick="openPage('Links', this, 'transparent')">Links</button>
+<a href="https://www.linkedin.com/in/matthew-dreusicke/" target = "_self"> 
+    <img src="linkedin.png" class="linkbutton" width= "20mm" alt = "me" border = "0"/>
+</a>
+<a href="https://www.instagram.com/matthews_perspective/" target = "_self"> 
+    <img src="insta.png" class="linkbutton" width= "20mm" alt = "me" border = "0"/>
+</a>
+<a href="https://www.facebook.com/matthew.dreusicke" target = "_self"> 
+    <img src="facebook.png" class="linkbutton" width= "20mm" alt = "me" border = "0"/>
+</a>
+</div>
+</div>
+
+
+<div id="About" class="tabcontent">
+    <h1 class="borderGrey">Matthew Dreusicke</h1>
+<div class="blackened">
+    <div style="display:inline-block;vertical-align:top;">    
+        <img src="MDD.jpg" alt="matthew" width="250" class="pho">
+    </div>
+    <div style="display: inline-block;">
+        <div style="display:inline-block;vertical-align:top;">
+        <h2 class="borderGrey">Aspiring Web Developer</h2>
+        </div>
+        <div>
+            <h2 class="borderGrey">Skilled in:</h2>
+            <h2 class="borderGrey">HTML</h2>
+            <h2 class="borderGrey">CSS</h2>
+            <h2 class="borderGrey">Microsoft Word</h2>
+            <h2 class="borderGrey">Microsoft Powerpoint</h2>
+        </div>
+
+    </div>
+</div>
+    <h2 class="borderGrey">A soon to be certified student looking for a career in web developing, ready to learn from
+    current professionals, and soon to be coworkeers, and bring a new perspective to the
+    table.</h2>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+   
+</body>
+</html> 
